@@ -3,8 +3,7 @@
 BASEDIR=~/dotfiles.git
 
 # ensure system setup
-# sudo apt-get install -y git python3 python3-pip python3-flake8 python-flake8
-# sudo pip install powerline
+sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential
 
 if [ -d $BASEDIR ]
 then
@@ -21,13 +20,20 @@ cd $BASEDIR
 git submodule init
 git submodule update
 
+# build powerline
+cd vim-files/vim/bundle/powerline/
+python setup.py build
+sudo python setup.py install
+
 # Got to home.
 cd
 
-# gitconfig idea
-# cat ~/.gitconfig_head gitconfig > ~/.gitconfig
-
 # Check the file exists or not.
+if [ ! -e ~/.gitconfig ]
+then
+    cat $BASEDIR/gitconfig >> ~/.gitconfig
+fi
+
 if [ ! -d ~/.vim ]
 then
     ln -s $BASEDIR/vim-files/vim ~/.vim
