@@ -1,0 +1,27 @@
+[submodule "vim-files/vim/bundle/python-syntax"]
+	path = vim-files/vim/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
+[submodule "vim-files/vim/bundle/nerdtree"]
+	path = vim-files/vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-files/vim/bundle/vim-fugitive"]
+	path = vim-files/vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim-files/vim/bundle/minibufexpl"]
+	path = vim-files/vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim-files/vim/bundle/ctrlp.vim"]
+	path = vim-files/vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim-files/vim/bundle/powerline"]
+	path = vim-files/vim/bundle/powerline
+	url = https://github.com/powerline/powerline
+[submodule "vim-files/vim/bundle/vim-surround"]
+	path = vim-files/vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim-files/vim/bundle/syntastic"]
+	path = vim-files/vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "vim-files/vim/autoload/vim-pathogen"]
+	path = vim-files/vim/autoload/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen

@@ -1,0 +1,26 @@
+# User config in ~/.gitconfig_head
+#
+# [user]
+# 	name = User Name
+# 	email = user.name@email.com
+# 	signingkey = 12345678
+#
+[push]
+	default = simple
+[core]
+	compression = 9
+[branch]
+	autosetuprebase = always
+[alias]
+	br = branch -va
+	ci = commit
+	co = checkout
+	dl = fetch --prune
+	lg = log --stat
+	lgv = log --graph --abbrev-commit --decorate --date=relative --all
+	lgs = log --graph --oneline --decorate --date=relative --all
+	me = merge --ff-only
+	st = status
+	up = rebase
+	sq = rebase -i
+	gca = gc --aggressive --prune
