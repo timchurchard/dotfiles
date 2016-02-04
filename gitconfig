@@ -12,9 +12,12 @@
 [branch]
 	autosetuprebase = always
 [alias]
-	br = branch -va
+	br = branch -vva
+	bd = log --oneline --cherry
+	bdv = log --cherry
 	ci = commit
 	co = checkout
+	cp = cherry-pick
 	dl = fetch --prune
 	lg = log --stat
 	lgv = log --graph --abbrev-commit --decorate --date=relative --all

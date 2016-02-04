@@ -1,0 +1,24 @@
+
+TC Random Cheatsheet for tmux, vim, git, etc
+
+tmux
+----
+
+bash_aliases: tm alias for attach or new.  EG bash$ tm fish    will start a new session or attach to an existing one by that name
+
+In .tmux.conf I've remapped ctrl+b to ctrl+h.  (vim uses for window scroll backwards.)
+
+ctrl+h |        to split the window vertically
+ctrl+h -        to split the window horizontally
+ctrl+h h j k l  to navigate between split windows (left down up right)
+ctrl+h d        to detach
+
+
+vim
+---
+
+ctrl+n to toggle the nerdtree
+
+
+git
+---

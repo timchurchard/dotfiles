@@ -12,7 +12,11 @@ filetype plugin indent on
 set nocompatible
 set modelines=0
 
-"TAB settings.
+" Line numbers
+set number
+set numberwidth=4
+
+" TAB settings.
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
