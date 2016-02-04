@@ -21,7 +21,7 @@
 	dl = fetch --prune
 	lg = log --stat
 	lgv = log --graph --abbrev-commit --decorate --date=relative --all
-	lgs = log --graph --oneline --decorate --date=relative --all
+	lgs = log --graph --oneline --decorate --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	me = merge --ff-only
 	st = status
 	up = rebase
