@@ -52,6 +52,10 @@ set wildignore+=migrations "Django migrations"
 set wildignore+=*.pyc "Python Object codes"
 set wildignore+=*.orig "Merge resolution files"
 
+" Stop vim writing backup files in normal dirs
+set swapfile
+set dir=~/.vim-tmp
+
 " =========== END Basic Vim Settings =========== "
 
 

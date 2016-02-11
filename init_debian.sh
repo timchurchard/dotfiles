@@ -25,8 +25,9 @@ cd vim-files/vim/bundle/powerline/
 python setup.py build
 sudo python setup.py install
 
-# Got to home.
+# Got to home. (and make vim tmp dir)
 cd
+mkdir .vim-tmp
 
 # Check the file exists or not.
 if [ ! -e ~/.gitconfig ]
