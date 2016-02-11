@@ -70,7 +70,7 @@ set background=dark
 colors peaksea
 
 " ctrlp
-let g:ctrlp_map = '<c-f>'
+" let g:ctrlp_map = '<c-f>'
 
 " Mapping to NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
@@ -100,6 +100,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 nnoremap <C-m> :MRU<cr>
 
 " taglist
-nnoremap <C-t> :TlistToggle<cr>
+" nnoremap <C-t> :TlistToggle<cr>
 
 " =========== END Plugin Settings ========== "
