@@ -3,7 +3,7 @@
 BASEDIR=~/dotfiles.git
 
 # ensure system setup
-sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux
+sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags
 
 if [ -d $BASEDIR ]
 then
@@ -53,3 +53,7 @@ if [ ! -e ~/.bash_aliases ]
 then
     ln -s $BASEDIR/bash_aliases ~/.bash_aliases
 fi
+
+# Add the fancy git pager
+# https://github.com/stevemao/diff-so-fancy
+# git config --global core.pager "diff-so-fancy | less --tabs=1,5 -R"

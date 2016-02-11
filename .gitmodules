@@ -25,3 +25,18 @@
 [submodule "vim-files/vim/autoload/vim-pathogen"]
 	path = vim-files/vim/autoload/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "vim-files/vim/bundle/vim-markdown"]
+	path = vim-files/vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim-files/vim/bundle/peaksea"]
+	path = vim-files/vim/bundle/peaksea
+	url = https://github.com/vim-scripts/peaksea.git
+[submodule "vim-files/vim/bundle/taglist.vim"]
+	path = vim-files/vim/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "vim-files/vim/bundle/mru.vim"]
+	path = vim-files/vim/bundle/mru.vim
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "vim-files/vim/bundle/yankring.vim"]
+	path = vim-files/vim/bundle/yankring.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git

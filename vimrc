@@ -57,6 +57,17 @@ set wildignore+=*.orig "Merge resolution files"
 
 " ========== Plugin Settings ========== "
 
+" colours
+if ! has("gui_running")
+    set t_Co=256
+endif
+" also background=light for a different style
+set background=dark
+colors peaksea
+
+" ctrlp
+let g:ctrlp_map = '<c-f>'
+
 " Mapping to NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$']
@@ -77,5 +88,14 @@ python powerline_setup()
 python del powerline_setup
 set laststatus=2
 set t_Co=256
+
+" vim-markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" mru.vim
+nnoremap <C-m> :MRU<cr>
+
+" taglist
+nnoremap <C-t> :TlistToggle<cr>
 
 " =========== END Plugin Settings ========== "

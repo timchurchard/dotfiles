@@ -25,6 +25,8 @@ git
 ---
 Some aliases for git
 
+- I like the following extras but I'm too lazy to add them to dotfiles
+https://github.com/stevemao/diff-so-fancy
 
 vim
 ---
