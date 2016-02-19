@@ -9,15 +9,20 @@
 	default = simple
 [core]
 	compression = 9
+    editor = vim
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [branch]
 	autosetuprebase = always
+[color]
+    ui = auto
 [alias]
 	br = branch -vva
-	bd = log --oneline --cherry
+	bd = log --oneline --cherry --date=short --pretty=format:'%Cred%h %Cgreen%an %Cblue%ad %Creset%s' 
 	bdv = log --cherry
 	ci = commit
 	co = checkout
 	cp = cherry-pick
+    df = diff
 	dl = fetch --prune
 	lg = log --stat
 	lgv = log --graph --abbrev-commit --decorate --date=relative --all
