@@ -1,6 +1,7 @@
 
 TC Random Cheatsheet for tmux, vim, git, etc
 
+
 tmux
 ----
 
@@ -19,6 +20,54 @@ vim
 
 ctrl+n to toggle the nerdtree
 
+<cr> or ctrl+m to toggle recently used files
+
+:badd path/to/file to open a new buffer
+:b1 to switch to buffer 1
+:bd to close this buffer
+
+:123<cr> to goto line
+
+yy or dd to copy or cut the line
+p or P to paste after or before current pos
+
+/query to search then /<cr> to search again
+
+ctrl+s to :StripWhitespace
+:retab to replaces tab indent with 4-spaces
+
+:w to write, also runs syntax check
+
 
 git
 ---
+
+# aliases
+
+br   : show verbose git branch all
+bd   : branch difference eg bd dev..dev-ab will show the different commits on dev-ab from dev
+bdv  : same as bd more verbose
+ci   : commit
+co   : checkout
+cp   : cherry-pick
+df   : diff
+dl   : fetch --prune
+lg   : log --stat
+lgv  : verbose log with branch graph
+lgs  : short log with branch graph
+me   : merge --ff-only
+st   : status
+up   : rebase
+sq   : rebase -i
+
+# not alias'd
+
+stash : ci is easier where ci --amend or sq can be used
+
+branch : I rarely run this (git co -b to create branches, git br to list)
+
+git show branch:file : short
+
+git push : short
+
+
