@@ -33,20 +33,25 @@ vim
 
 pathogen: plugin loader
 
-nerdtree: file tree
+vim-sensible: Sane settings
+
+vim-better-whitespace: Whitespace highlighting and :StripWhitespace command
+
+nerdtree: file tree (ctrl+n to toggle)
 
 python-syntax: syntax highlighting
-  todo: not working ?
 
-vim-fugitive: git integration
+vim-fugitive: git integration  (:Git status)
 
 minibufexpl: Elegant buffer explorer
 
 ctrlp.vim: fuzzy find
 
 powerline: git info on status line
-  note: requires python setup.py build, install (or system pip)
+  note: requires install eg system pip
 
 syntastic: live syntax checking
+  note: cpu intensive (jshint, flake8 etc)
 
 vim-surround: automatic quotes, parens ending
+

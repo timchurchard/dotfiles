@@ -102,4 +102,7 @@ nnoremap <C-m> :MRU<cr>
 " taglist
 " nnoremap <C-t> :TlistToggle<cr>
 
+" better whitespace
+nnoremap <C-s> :StripWhitespace<cr>
+
 " =========== END Plugin Settings ========== "

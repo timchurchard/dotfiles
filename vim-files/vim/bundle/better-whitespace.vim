@@ -1,1 +1,0 @@
-vim-better-whitespace/plugin/better-whitespace.vim
