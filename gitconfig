@@ -1,34 +1,35 @@
 # User config in ~/.gitconfig_head
 #
 # [user]
-# 	name = User Name
-# 	email = user.name@email.com
-# 	signingkey = 12345678
+#   name = User Name
+#   email = user.name@email.com
+#   signingkey = 12345678
 #
 [push]
-	default = simple
+    default = simple
 [core]
-	compression = 9
+    compression = 9
     editor = vim
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [color]
     ui = auto
 [alias]
-	br = branch -vva
-	bd = log --oneline --cherry --date=short --pretty=format:'%Cred%h %Cgreen%an %Cblue%ad %Creset%s' 
-	bdv = log --cherry
-	ci = commit
-	co = checkout
-	cp = cherry-pick
+    br = branch -vva
+    bd = log --oneline --cherry --date=short --pretty=format:'%Cred%h %Cgreen%an %Cblue%ad %Creset%s'
+    bdv = log --cherry
+    ca = commit --amend --date=""
+    ci = commit
+    co = checkout
+    cp = cherry-pick
     df = diff
-	dl = fetch --prune
-	lg = log --stat
-	lgv = log --graph --abbrev-commit --decorate --date=relative --all
-	lgs = log --graph --oneline --decorate --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	me = merge --ff-only
-	st = status
-	up = rebase
-	sq = rebase -i
-	gca = gc --aggressive --prune
+    dl = fetch --prune
+    lg = log --stat
+    lgv = log --graph --abbrev-commit --decorate --date=relative --all
+    lgs = log --graph --oneline --decorate --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    me = merge --ff-only
+    st = status
+    up = rebase
+    sq = rebase -i
+    gca = gc --aggressive --prune
