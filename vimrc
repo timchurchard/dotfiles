@@ -69,8 +69,13 @@ endif
 set background=dark
 colors peaksea
 
+" nofrils minimal syntax highlighting
+" :colo nofrils-dark
+" :colo nofrils-light
+" :colo nofrils-sepia
+
 " ctrlp
-" let g:ctrlp_map = '<c-f>'
+let g:ctrlp_map = '<c-f>'
 
 " Mapping to NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
