@@ -65,14 +65,19 @@ set dir=~/.vim-tmp
 if ! has("gui_running")
     set t_Co=256
 endif
-" also background=light for a different style
-set background=dark
 colors peaksea
 
 " nofrils minimal syntax highlighting
-" :colo nofrils-dark
+:colo nofrils-dark
 " :colo nofrils-light
 " :colo nofrils-sepia
+" :let g:nofrils_strbackgrounds=1
+
+" background setting after colour setting !
+set background=dark
+" also background=light for a different style
+" set line numbers to white
+hi LineNr    term=NONE    cterm=NONE    ctermfg=NONE    ctermbg=NONE     gui=NONE    guifg=#FFFFFF    guibg=#000000
 
 " ctrlp
 let g:ctrlp_map = '<c-f>'
