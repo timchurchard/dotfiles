@@ -1,16 +1,16 @@
 
 " ========== Vim Basic Settings ============= "
 
+" Make vim incompatbile to vi.
+set nocompatible
+set modelines=2
+
 " Pathogen settings.
 filetype off
 "call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 Helptags
 filetype plugin indent on
-
-" Make vim incompatbile to vi.
-set nocompatible
-set modelines=0
 
 " Line numbers
 set number
@@ -21,21 +21,30 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set smarttab
 
 " More Common Settings.
 set encoding=utf-8
 set scrolloff=3
 set autoindent
+set copyindent
 set showmode
 set showcmd
 set hidden
 set visualbell
 syntax on
 
+" Make search ignore case if lowercase else case sensitive
+set ignorecase
+set smartcase
+
 " Get Rid of stupid Goddamned help keys
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+" Insert mode press F2 to disable any auto-intent etc on the pasted text!
+set pastetoggle=<F2>
 
 " Wildmenu completion "
 set wildmenu
@@ -68,7 +77,7 @@ endif
 colors peaksea
 
 " nofrils minimal syntax highlighting
-:colo nofrils-dark
+" colors nofrils-dark
 " :colo nofrils-light
 " :colo nofrils-sepia
 " :let g:nofrils_strbackgrounds=1
@@ -76,8 +85,10 @@ colors peaksea
 " background setting after colour setting !
 set background=dark
 " also background=light for a different style
-" set line numbers to white
-hi LineNr    term=NONE    cterm=NONE    ctermfg=NONE    ctermbg=NONE     gui=NONE    guifg=#FFFFFF    guibg=#000000
+" set line numbers to grey on black
+hi LineNr    cterm=NONE ctermfg=grey  ctermbg=black
+" set line numbers to black on white
+" hi LineNr    term=NONE    cterm=NONE    ctermfg=NONE    ctermbg=NONE     gui=NONE    guifg=#000000    guibg=#FFFFFF
 
 " ctrlp
 let g:ctrlp_map = '<c-f>'
@@ -110,9 +121,10 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 nnoremap <C-m> :MRU<cr>
 
 " taglist
-" nnoremap <C-t> :TlistToggle<cr>
+nnoremap <C-t> :TlistToggle<cr>
 
 " better whitespace
 nnoremap <C-s> :StripWhitespace<cr>
 
 " =========== END Plugin Settings ========== "
+

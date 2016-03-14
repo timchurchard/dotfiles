@@ -1,1 +1,0 @@
-peaksea/colors/peaksea.vim

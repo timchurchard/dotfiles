@@ -3,7 +3,7 @@
 BASEDIR=~/dotfiles.git
 
 # ensure system setup
-sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags
+sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags exuberant-ctags
 
 if [ -d $BASEDIR ]
 then
