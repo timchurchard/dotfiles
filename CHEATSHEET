@@ -14,11 +14,23 @@ ctrl+h -        to split the window horizontally
 ctrl+h h j k l  to navigate between split windows (left down up right)
 ctrl+h d        to detach
 
+ctrl+h c        to create a new session/buffer
+ctrl+h s        to select session/buffer from list
+ctrl+h 1        to switch to session/buffer 1
+
+ctrl+h [        to enter scroll mode then up/down to pgUp/pgDown to scroll.  ctrl+c to exit.
+
 
 vim
 ---
 
 ctrl+n to toggle the nerdtree
+
+ctrl+f to toggle file finder
+
+ctrl+t to toggle tag list
+
+ctrl+m to toggle recently used files
 
 <cr> or ctrl+m to toggle recently used files
 
@@ -31,7 +43,8 @@ ctrl+n to toggle the nerdtree
 yy or dd to copy or cut the line
 p or P to paste after or before current pos
 
-/query to search then /<cr> to search again
+/query to search <cr> when found
+then /<cr> to search again
 
 ctrl+s to :StripWhitespace
 :retab to replaces tab indent with 4-spaces

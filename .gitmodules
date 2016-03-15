@@ -49,3 +49,9 @@
 [submodule "vim-files/vim/bundle/nofrils"]
 	path = vim-files/vim/bundle/nofrils
 	url = https://github.com/robertmeta/nofrils.git
+[submodule "urxvt-files/ext_resize-font"]
+	path = urxvt-files/ext_resize-font
+	url = https://github.com/simmel/urxvt-resize-font.git
+[submodule "urxvt-files/ext_urxvt_perl"]
+	path = urxvt-files/ext_urxvt_perl
+	url = https://github.com/effigies/urxvt-perl.git
