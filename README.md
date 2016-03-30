@@ -1,14 +1,25 @@
 
-TCs dotfiles
+# TCs dotfiles
 
-# Initilize the Reop.
+![Alt text](sc_trans_vim.png?raw=true)
+![Alt text](sc_peaksea_vim.png?raw=true)
+
+## Switch to zsh + oh my zsh if you have not already
+https://github.com/robbyrussell/oh-my-zsh
+ZSH_THEME="agnoster"
+
+## Initilize the Reop.
+```shell
 git submodule init
 git submodule update
+```
 
-# Get powerline
+## Get powerline
+```shell
 sudo pip install powerline
+```
 
-# Note: install flake8 for syntastic to work
+Note: install flake8 for syntastic to work
 
 
 tmux
@@ -54,4 +65,6 @@ syntastic: live syntax checking
   note: cpu intensive (jshint, flake8 etc)
 
 vim-surround: automatic quotes, parens ending
+
+peaksea.vim: colour theme
 
