@@ -63,6 +63,7 @@ powerline: git info on status line
 
 syntastic: live syntax checking
   note: cpu intensive (jshint, flake8 etc)
+  note: global flake8 config included
 
 vim-surround: automatic quotes, parens ending
 

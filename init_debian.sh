@@ -29,6 +29,12 @@ sudo python setup.py install
 cd
 mkdir .vim-tmp
 
+# Check if global flake8 file exists
+if [ ! -e ~/.config/flake8 ]
+then
+    cp flake8 ~/.config/flake8
+fi
+
 # Check the file exists or not.
 if [ ! -e ~/.gitconfig ]
 then
