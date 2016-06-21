@@ -3,6 +3,9 @@
 BASEDIR=~/dotfiles.git
 
 # ensure system setup
+# Note: ubuntu 16.04 (And rename python to python3 in vimrc for powerline import)
+# sudo apt-get remove vim
+# sudo apt-get install vim-nox
 sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags exuberant-ctags
 
 if [ -d $BASEDIR ]
@@ -28,6 +31,7 @@ sudo python setup.py install
 # Got to home. (and make vim tmp dir)
 cd
 mkdir .vim-tmp
+cd $BASEDIR
 
 # Check if global flake8 file exists
 if [ ! -e ~/.config/flake8 ]
