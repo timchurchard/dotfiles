@@ -55,3 +55,9 @@
 [submodule "urxvt-files/ext_urxvt_perl"]
 	path = urxvt-files/ext_urxvt_perl
 	url = https://github.com/effigies/urxvt-perl.git
+[submodule "vim-files/vim/bundle/yats"]
+	path = vim-files/vim/bundle/yats
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
+[submodule "vim-files/vim/bundle/YouCompleteMe"]
+	path = vim-files/vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

@@ -23,14 +23,16 @@ cd $BASEDIR
 git submodule init
 git submodule update
 
-# build powerline
-cd vim-files/vim/bundle/powerline/
-python setup.py build
-sudo python setup.py install
+## note: system install python-powerline works better
+sudo apt-get install powerline python-powerline
+## build powerline
+#cd vim-files/vim/bundle/powerline/
+#python setup.py build
+#sudo python setup.py install
 
 # Got to home. (and make vim tmp dir)
 cd
-mkdir .vim-tmp
+mkdir -p .vim-tmp
 cd $BASEDIR
 
 # Check if global flake8 file exists
