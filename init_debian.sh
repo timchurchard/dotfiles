@@ -21,7 +21,7 @@ cd $BASEDIR
 
 # Initilize the Reop.
 git submodule init
-git submodule update
+git submodule update --init --recursive
 
 ## note: system install python-powerline works better
 sudo apt-get install powerline python-powerline
@@ -70,3 +70,8 @@ fi
 # Add the fancy git pager
 # https://github.com/stevemao/diff-so-fancy
 # git config --global core.pager "diff-so-fancy | less --tabs=1,5 -R"
+
+# Setup you complete me
+sudo apt-get install python-dev cmake
+cd vim-files/vim/bundle/YouCompleteMe/
+python install.py
