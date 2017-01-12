@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 ## Initilize the Reop.
 ```shell
 git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ## Get powerline
