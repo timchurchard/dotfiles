@@ -24,7 +24,7 @@ git submodule init
 git submodule update --init --recursive
 
 ## note: system install python-powerline works better
-sudo apt-get install powerline python-powerline
+sudo apt-get install powerline python3-powerline
 ## build powerline
 #cd vim-files/vim/bundle/powerline/
 #python setup.py build

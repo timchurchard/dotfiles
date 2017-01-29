@@ -14,12 +14,12 @@ git submodule init
 git submodule update --init --recursive
 ```
 
-## Get powerline
+## Run Install
 ```shell
-sudo pip install powerline
+bash init_debian.sh
 ```
 
-Note: install flake8 for syntastic to work
+Note: install flake8 and shellcheck for syntastic to work
 
 
 tmux
