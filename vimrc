@@ -38,6 +38,11 @@ syntax on
 set ignorecase
 set smartcase
 
+" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 " Get Rid of stupid Goddamned help keys
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -125,6 +130,7 @@ nnoremap <C-t> :TlistToggle<cr>
 
 " better whitespace
 nnoremap <C-s> :StripWhitespace<cr>
+autocmd BufEnter * :ToggleStripWhitespaceOnSave
 
 " =========== END Plugin Settings ========== "
 

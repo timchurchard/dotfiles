@@ -61,3 +61,6 @@
 [submodule "vim-files/vim/bundle/YouCompleteMe"]
 	path = vim-files/vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vim-files/vim/bundle/incsearch.vim"]
+	path = vim-files/vim/bundle/incsearch.vim
+	url = https://github.com/haya14busa/incsearch.vim
