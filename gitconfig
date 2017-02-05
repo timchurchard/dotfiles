@@ -19,7 +19,7 @@
     br = branch -vva
     bd = log --oneline --cherry --date=short --pretty=format:'%Cred%h %Cgreen%an %Cblue%ad %Creset%s'
     bdv = log --cherry
-    ca = commit --amend --date=""
+    ca = commit --amend --date="now"
     ci = commit
     co = checkout
     cp = cherry-pick
@@ -33,3 +33,11 @@
     up = rebase
     sq = rebase -i
     gca = gc --aggressive --prune
+    su = submodule update --init --recursive
+    spush = push --recurse-submodules=on-demand
+[fetch]
+    recurseSubmodules = yes
+[status]
+    submoduleSummary = true
+[diff]
+    submodule = log

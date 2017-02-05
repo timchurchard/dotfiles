@@ -75,3 +75,6 @@ fi
 sudo apt-get install python-dev cmake
 cd vim-files/vim/bundle/YouCompleteMe/
 python install.py
+
+#
+echo "fin."
