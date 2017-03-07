@@ -69,3 +69,5 @@ vim-surround: automatic quotes, parens ending
 
 peaksea.vim: colour theme
 
+ack.vim: inline grep
+

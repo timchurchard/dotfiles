@@ -1,4 +1,3 @@
-
 " ========== Vim Basic Settings ============= "
 
 " Make vim incompatbile to vi.
@@ -48,6 +47,12 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+" Work around for SSH in Browser (Alt+up down left right instead of ctrl+w h)
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
 " Insert mode press F2 to disable any auto-intent etc on the pasted text!
 set pastetoggle=<F2>
 
@@ -81,6 +86,10 @@ if ! has("gui_running")
 endif
 colors peaksea
 
+" Ack
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+
 " nofrils minimal syntax highlighting
 " colors nofrils-dark
 " :colo nofrils-light
@@ -96,7 +105,7 @@ hi LineNr    cterm=NONE ctermfg=grey  ctermbg=black
 " hi LineNr    term=NONE    cterm=NONE    ctermfg=NONE    ctermbg=NONE     gui=NONE    guifg=#000000    guibg=#FFFFFF
 
 " ctrlp
-let g:ctrlp_map = '<c-f>'
+let g:ctrlp_map = '<C-i>'
 
 " Mapping to NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
@@ -123,7 +132,8 @@ set t_Co=256
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " mru.vim
-nnoremap <C-m> :MRU<cr>
+"Note: removed, type :MRU for now or use <C-f>
+"nnoremap <C-m> :MRU<cr>
 
 " taglist
 nnoremap <C-t> :TlistToggle<cr>
@@ -133,4 +143,3 @@ nnoremap <C-s> :StripWhitespace<cr>
 autocmd BufEnter * :ToggleStripWhitespaceOnSave
 
 " =========== END Plugin Settings ========== "
-

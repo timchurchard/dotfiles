@@ -11,7 +11,7 @@
 	path = vim-files/vim/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "vim-files/vim/bundle/ctrlp.vim"]
-	path = vim-files/vim/bundle/ctrlp.vim
+	path = vim-files/vim/bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "vim-files/vim/bundle/powerline"]
 	path = vim-files/vim/bundle/powerline
@@ -32,10 +32,10 @@
 	path = vim-files/vim/bundle/peaksea
 	url = https://github.com/vim-scripts/peaksea.git
 [submodule "vim-files/vim/bundle/taglist.vim"]
-	path = vim-files/vim/bundle/taglist.vim
+	path = vim-files/vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "vim-files/vim/bundle/mru.vim"]
-	path = vim-files/vim/bundle/mru.vim
+	path = vim-files/vim/bundle/mru
 	url = https://github.com/vim-scripts/mru.vim.git
 [submodule "vim-files/vim/bundle/yankring.vim"]
 	path = vim-files/vim/bundle/yankring.vim
@@ -62,5 +62,8 @@
 	path = vim-files/vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim-files/vim/bundle/incsearch.vim"]
-	path = vim-files/vim/bundle/incsearch.vim
+	path = vim-files/vim/bundle/incsearch
 	url = https://github.com/haya14busa/incsearch.vim
+[submodule "vim-files/vim/bundle/ack.vim"]
+	path = vim-files/vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git

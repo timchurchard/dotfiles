@@ -6,7 +6,7 @@ BASEDIR=~/dotfiles.git
 # Note: ubuntu 16.04 (And rename python to python3 in vimrc for powerline import)
 # sudo apt-get remove vim
 # sudo apt-get install vim-nox
-sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags exuberant-ctags
+sudo apt-get install git python3 python3-pip python3-flake8 python-flake8 vim build-essential tmux ctags exuberant-ctags ack-grep
 
 if [ -d $BASEDIR ]
 then
