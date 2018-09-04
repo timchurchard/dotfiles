@@ -35,6 +35,8 @@
     gca = gc --aggressive --prune
     su = submodule update --init --recursive
     spush = push --recurse-submodules=on-demand
+    stu = status -uno
+    ss = stash
 [fetch]
     recurseSubmodules = yes
 [status]

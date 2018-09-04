@@ -91,7 +91,7 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 " nofrils minimal syntax highlighting
-" colors nofrils-dark
+"colors nofrils-dark
 " :colo nofrils-light
 " :colo nofrils-sepia
 " :let g:nofrils_strbackgrounds=1
@@ -132,14 +132,16 @@ set t_Co=256
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " mru.vim
-"Note: removed, type :MRU for now or use <C-f>
-"nnoremap <C-m> :MRU<cr>
+nnoremap <Leader>m :MRU!<cr>
 
 " taglist
 nnoremap <C-t> :TlistToggle<cr>
 
 " better whitespace
-nnoremap <C-s> :StripWhitespace<cr>
+nnoremap <Leader>s :StripWhitespace<cr>
 autocmd BufEnter * :ToggleStripWhitespaceOnSave
+
+" retab
+nnoremap <Leader>r :retab<cr>
 
 " =========== END Plugin Settings ========== "
